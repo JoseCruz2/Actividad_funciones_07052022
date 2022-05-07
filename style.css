@@ -51,13 +51,13 @@ body{
     transition: 0.5s;
 }
 .card:nth-child(1) .circle::before{
-    background: #4A88A4;
+    background: #7d1313;
 }
 .card:nth-child(2) .circle::before{
-    background: #747492;
+    background: #5d5dce;
 }
 .card:nth-child(3) .circle::before{
-    background: #7E8C66;
+    background: #205410;
 }
 /************************************/
 .card:hover .circle::before{
