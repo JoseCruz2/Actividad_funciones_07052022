@@ -54,7 +54,7 @@ body{
     background: #7d1313;
 }
 .card:nth-child(2) .circle::before{
-    background: #5d5dce;
+    background: #0a0aba;
 }
 .card:nth-child(3) .circle::before{
     background: #205410;
