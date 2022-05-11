@@ -10,6 +10,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
+    background: #eee;
 }
 .card{
     position: relative;
@@ -47,32 +48,69 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    background: #ccc;
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
 .card:nth-child(1) .circle::before{
-    background: #7d1313;
+    background: #f66161;
 }
 .card:nth-child(2) .circle::before{
-    background: #0a0aba;
+    background: #0202c0;
 }
 .card:nth-child(3) .circle::before{
-    background: #205410;
+    background: #1d6602;
+}
+.card:nth-child(4) .circle::before{
+    background: #646262;
+}
+.card:nth-child(5) .circle::before{
+    background: #8b8888;
+}
+.card:nth-child(6) .circle::before{
+    background: #292828;
+}
+.card:nth-child(7) .circle::before{
+    background: #91e28a;
+}
+.card:nth-child(8) .circle::before{
+    background: #293869;
+}
+.card:nth-child(9) .circle::before{
+    background: #5f2828;
+}
+.card:nth-child(10) .circle::before{
+    background: #670a0a;
+}
+.card:nth-child(11) .circle::before{
+    background: #d14848;
+}
+.card:nth-child(12) .circle::before{
+    background: #242c82;
 }
 /************************************/
 .card:hover .circle::before{
     clip-path: circle(400px at center);
 }
+/*****************************************/
 .card .circle .logo{
     position: relative;
     width: 200px;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
+.card:nth-child(2) .circle .logo{
+    width: 165px;
+}
+.card:nth-child(3) .circle .logo{
+    width: 164px;
+}
+/**************************************/
 .card:hover .circle .logo{
     transform: scale(0);
     transition-delay: 0s;
 }
+/******************************************/
 .content{
     position: relative;
     width: 55%;
@@ -82,6 +120,10 @@ body{
     transition: 0.5s;
     visibility: hidden;
 }
+.card:nth-child(2) .content{
+    padding: 20px 26px 20px 35px;
+}
+/**********************************************/
 .card:hover .content{
     left: 0;
     opacity: 1;
@@ -113,14 +155,50 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    height: 350px;
+    height: 280px;
     transition: 0.5s;
     transition-delay: 0s;
 }
 .card:hover .product_img{
-    left: 85%;
-    transform: translate(-50%, -50%) scale(1);
+    left: 45%;
+    transform: translate(10%, -50%) scale(1);
     transition-delay: 0.5s;
+}
+.card:hover:nth-child(2) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(3) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(4) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(5) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(6) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(6) .product_img{
+    transform: translate(-5%, -50%) scale(1);
+}
+.card:hover:nth-child(7) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(8) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(9) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(10) .product_img{
+    transform: translate(-10%, -50%) scale(1);
+}
+.card:hover:nth-child(11).product_img{
+    transform: translate(-200%, -50%) scale(1);
+}
+.card:hover:nth-child(12) .product_img{
+    transform: translate(-10%, -50%) scale(1);
 }
 
 @media (max-width: 991px){
