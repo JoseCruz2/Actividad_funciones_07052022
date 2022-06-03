@@ -104,7 +104,7 @@ let mostrar = (
                 <div class="content">
                     <h2>${titulo}</h2>
                     <p>${parrafo}</p>
-                    <a href="#">Ver Más</a>
+                    <a href="Galeria.html">Ver Más</a>
                 </div>
                 <img src="${img}" class="product_img">`;
     caja.insertAdjacentHTML("beforeend", html);
