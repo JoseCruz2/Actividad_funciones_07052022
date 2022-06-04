@@ -8,7 +8,7 @@ let producto_1 = {
 let producto_2 = {
     titulo: "PS5",
     parrafo: "Experimenta una velocidad sorprendente con una SSD de velocidad ultrarrápida, una inmersión más profunda con soporte para respuesta háptica1, gatillos adaptables1 y audio 3D*, además de una generación completamente nueva de juegos de PlayStation.",
-    logo: "img/logo.png",
+    logo: "img/Logops5.png",
     img: "img/play.png",
     id: document.querySelector("#producto2")
 };
