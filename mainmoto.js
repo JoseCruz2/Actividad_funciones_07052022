@@ -15,23 +15,9 @@ document.querySelector("#tecnica").innerHTML = json[`${urlData.get('id')}`].fich
     json[`${urlData.get('id')}`].similares.forEach((data, id) => {
         btn.insertAdjacentHTML("beforeend", //html
          `
-         <div data-producto="${data.img}"></div>
+         <div data-producto="${data.img}"><img src="${data.logo}"></div>
          `
          )
     });
 
-    let redBtn = document.getElementById("red");
-    let blueBtn = document.getElementById("blue");
-    let blackBtn = document.getElementById("black");
-    let bike = document.getElementById("bike");
-
-    redBtn.onclick = function(){
-        bike.style.backgroundImage = "url(img/BMW1.png)";
-        };
-        blueBtn.onclick = function(){
-        bike.style.backgroundImage = "url(img/BMW2.png)";
-        };
-        blackBtn.onclick = function(){
-        bike.style.backgroundImage = "url(img/BMW3.png)";
-    };
-})
+    });
